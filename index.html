@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+    <a-entity static-body geometry="primitive: box; depth: 50; height: 0.1; width: 160"  material="shader: flat; side: double; opacity: 1;src: tile2.jpg; repeat: 20 12" position="0 0 0">
+        <!-- hallway and door are 7 https://i.imgur.com/mYmmbrp.jpg -->
+        <a-entity static-body geometry="primitive: box; depth: 50; height: 14; width: 1" position="-80 7 0" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 33" position="-63.5 7 25" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 33" position="-63.5 7 -25" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 50; height: 14; width: 1" position="-47 7 0" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 33; height: 14; width: 1" position="38 7 8.5" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 17; height: 14; width: 1" position="16.5 7 -16.5" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 10; height: 14; width: 1" position="23.5 7 -20" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 10; height: 14; width: 1" position="60 7 -20" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 56" position="52 7 -25" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 56" position="52 7 -15.5" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 64" position="-15 7 -8" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 14" position="31 7 -7.5" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 64" position="-15 7 -25" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 85" position="-4.5 7 25" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 42" position="59 7 25" material="src: wall2.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 50; height: 14; width: 1" position="80.5 7 0" material="src: wall2.jpg"></a-entity>
+        <!-- important wall  -->
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 42" position="59 7 -7.5" material="src: wall2.jpg"></a-entity>
+
+    </a-entity>
+
+
+    <a-sphere src="wall2.jpg" position="0 1.25 -5" radius="1.25" ></a-sphere>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+    <a-sky color="#ECECEC"></a-sky>
+</a-scene>
+</body>
+</html>
