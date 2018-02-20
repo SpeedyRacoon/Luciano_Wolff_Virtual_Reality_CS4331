@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+    <a-entity position="0 3 12">
+        <a-camera universal-controls>
+            <a-entity raycaster="far: 150; objects: .intersectable" cursor geometry="primitive: ring; radiusOuter: 0.015;
+                              radiusInner: 0.01; segmentsTheta: 32" material="color: #283644; shader: flat" position="0 0 -0.75"></a-entity>
+        </a-camera>
+    </a-entity>
+    <a-entity static-body geometry="primitive: box; depth: 50; height: 0.1; width: 160"  material="shader: flat; side: double; opacity: 1;src: tile.jpg; repeat: 20 12" position="0 0 0">
+        <!-- hallway and door with and length are 7 -->
+        <!-- kitchen walls -->
+        <a-entity static-body geometry="primitive: box; depth: 50; height: 3; width: 1" position="-47 12.5 0" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 40; height: 11; width: 1" position="-47 5.5 -4.5" material="src: wall.jpg"></a-entity>
+        <!-- dining room walls -->
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 3; width: 64" position="-15 12.5 -8" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 11; width: 55" position="-19 5.5 -8" material="src: wall.jpg"></a-entity>
+        <!-- bathroom and tv room walls -->
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 3; width: 56" position="52 12.5 -15.5" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 11; width: 30" position="45 5.5 -15.5" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 11; width: 15" position="67 5.5 -15.5" material="src: wall.jpg"></a-entity>
+        <!-- bedroom walls-->
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 3; width: 42" position="59 12.5 -7.5" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 11; width: 35" position="56 5.5 -7.5" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 50; height: 14; width: 1" position="-80 7 0" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 33" position="-63.5 7 25" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 33" position="-63.5 7 -25" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 33; height: 14; width: 1" position="38 7 8.5" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 17; height: 14; width: 1" position="16.5 7 -16.5" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 10; height: 14; width: 1" position="23.5 7 -20" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 10; height: 14; width: 1" position="60 7 -20" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 56" position="52 7 -25" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 14" position="31 7 -7.5" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 64" position="-15 7 -25" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 85" position="-4.5 7 25" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 42" position="59 7 25" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 50; height: 14; width: 1" position="80.5 7 0" material="src: wall.jpg"></a-entity>
+        <!-- objects -->
+        <!-- door and upper doorframe-->
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 3; width: 7" position="20 12.5 -25" material="src: wall.jpg"></a-entity>
+        <a-entity static-body geometry="primitive: box; depth: 1; height: 11; width: 7" position="20 5.5 -25" material="src: door.jpg"></a-entity>
+        <!-- living room table  -->
+        <a-obj-model collada-model= "living_room_chair.dae" position="-3.22 0.34 16.37"></a-obj-model>
+        <!-- dinning table  -->
+        <a-obj-model collada-model= "dinning_table.dae" position="-10 0 -16"></a-obj-model>
+        <!-- kitchen table   -->
+        <a-obj-model collada-model= "tall_chairs.dae" position="-55.4 -0.307 17.334"></a-obj-model>
+        <!-- bed   -->
+        <a-obj-model collada-model= "bed.dae" position="61 0.7 21"></a-obj-model>
+        <a-entity static-body geometry="primitive: box; depth: 50; height: .1; width: 160"  material="shader: flat; side: double; opacity: 1;src: drywall_ceiling.jpg; repeat: 20 12" position="0 14 0"> </a-entity>
+    </a-entity>
+    <a-sky color="#ECECEC"></a-sky>
+</a-scene>
+</body>
+</html>
